@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  baota:
+    image: baota:1.0.0
+    container_name: baota
+    ports:
+      - "2020:20"
+      - "2021:21"
+      - "2080:80"
+      - "2443:443"
+      - "2888:888"
+      - "28888:8888"
+    volumes:
+      - /www11:/www
+    privileged: true
+    #command: sh /bin/entrypoint.sh
