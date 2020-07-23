@@ -1,5 +1,5 @@
 FROM baota:1.0.0
-LABEL MAINTAINER="shixiaoliang@rongyi.com" \
+LABEL MAINTAINER="sxl_youcun@qq.com" \
       author="steven"
 WORKDIR /
 ADD www.tar.gz /
