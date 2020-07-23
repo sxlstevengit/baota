@@ -27,6 +27,8 @@ docker-compose -f docker-compose.yml  up -d(需要用到docker-compose.yml文件
 
 如果你想持久存储，修改数据之后，你需要把容器内/www目录复制到主机上面，然后下次再启动容器时，把该目录挂载到容器的/www目录上，这样数据永不丢失。
 
+从容器中复制数据出来
+docker cp 23355cc20131:/www/ /btdata/
 
 docker run -itd --name baota --privileged -p 2020:20 -p 2021:21 -p 2080:80 -p 2443:443 -p 2888:888 -p 28888:8888 -v /btdata/www:/www sxlsteven/baota:1.0.1
 
