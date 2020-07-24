@@ -21,7 +21,8 @@
 docker run -itd --name baota --privileged -p 2020:20 -p 2021:21 -p 2080:80 -p 2443:443 -p 2888:888 -p 28888:8888  sxlsteven/baota:1.0.1
 
 
-###或者：
+或者
+----------
 
 docker-compose -f docker-compose.yml  up -d(需要用到docker-compose.yml文件)
 
