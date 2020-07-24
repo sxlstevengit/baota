@@ -17,7 +17,6 @@
 docker run -itd --name baota --privileged -p 2020:20 -p 2021:21 -p 2080:80 -p 2443:443 -p 2888:888 -p 28888:8888  sxlsteven/baota:1.0.1
 
 
-
 或者：
 
 docker-compose -f docker-compose.yml  up -d(需要用到docker-compose.yml文件)
@@ -42,3 +41,13 @@ docker run -itd --name baota --privileged -p 2020:20 -p 2021:21 -p 2080:80 -p 24
 初始账号 rootadmin
 
 初始密码 rootadmin
+
+登录之后，在宝塔面板设置里面，修改成自己服务器的参数即可。
+
+
+附：
+
+当然你也可以直接以主机网络模式启动 （注意监听端口不要重复）
+
+docker run -itd --name baota --privileged --network host sxlsteven/baota:1.0.1
+
