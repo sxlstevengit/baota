@@ -11,6 +11,6 @@ services:
       - "2888:888"
       - "28888:8888"
     volumes:
-      - /www11:/www
+      - /btdata/www:/www
     privileged: true
     #command: sh /bin/entrypoint.sh
